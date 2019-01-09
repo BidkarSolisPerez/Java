@@ -85,139 +85,85 @@ public class Main {
             A location in the computer’s memory that may contain different values at various times throughout the execution of a program is called a(n) variable               
         * 2.8 Write Java statements that accomplish each of the following tasks:
             Display the message "Enter an integer: ", leaving the cursor on the same line.
+            * System.out.print("Enter an integer: ");
             Assign the product of variables b and c to the int variable a.
-            Use a comment to state that a program performs a sample payroll calculation.    
+            * int a = b + c;
+            Use a comment to state that a program performs a sample payroll calculation.
+            * //program performs a sample payroll calculation
         * 2.9 State whether each of the following is true or false. If false, explain why.
-
-            Java operators are evaluated from left to right.
-
-            The following are all valid variable names: _under_bar_, m928134, t5, j7, her_sales$, his_$account_total, a, b$, c, z and z2.
-
-            A valid Java arithmetic expression with no parentheses is evaluated from left to right.
-
-            The following are all invalid variable names: 3g, 87, 67h2, h22 and 2h.
-
-            2.10 Assuming that x = 2 and y = 3, what does each of the following statements display?
-
-            System.out.printf("x = %d%n", x);
-
-            System.out.printf("Value of %d + %d is %d%n", x, x, (x + x));
-
-            System.out.printf("x =");
-
-            System.out.printf("%d = %d%n", (x + y), (y + x));
-
-            2.11 Which of the following Java statements contain variables whose values are modified?
-
+            Java operators are evaluated from left to right. True
+            The following are all valid variable names: _under_bar_, m928134, t5, j7, her_sales$, his_$account_total, a, b$, c, z and z2. true
+            A valid Java arithmetic expression with no parentheses is evaluated from left to right. True
+            The following are all invalid variable names: 3g, 87, 67h2, h22 and 2h. false
+        2.10 Assuming that x = 2 and y = 3, what does each of the following statements display?
+            System.out.printf("x = %d%n", x); x = 2
+            System.out.printf("Value of %d + %d is %d%n", x, x, (x + x)); Value of 2 + 2 is 4
+            System.out.printf("x ="); x=
+            System.out.printf("%d = %d%n", (x + y), (y + x)); 5 = 5
+        2.11 Which of the following Java statements contain variables whose values are modified?
             int p = i + j + k + 7;
-
             System.out.println("variables whose values are modified");
-
             System.out.println("a = 5");
-
             int value = input.nextInt();
-
-            2.12 Given that y=ax3+7, which of the following are correct Java statements for this equation?
-
+        2.12 Given that y=ax3+7, which of the following are correct Java statements for this equation?
             int y = a * x * x * x + 7;
-
             int y = a * x * x * (x + 7);
-
             int y = (a * x) * x * (x + 7);
-
             int y = (a * x) * x * x + 7;
-
             int y = a * (x * x * x) + 7;
-
             int y = a * x * (x * x + 7);
-
-            2.13 State the order of evaluation of the operators in each of the following Java statements, and show the value of x after each statement is performed:
-
+        2.13 State the order of evaluation of the operators in each of the following Java statements, and show the value of x after each statement is performed:
             int x = 7 + 3 * 6 / 2 - 1;
-
             int x = 2 % 2 + 2 * 2 - 2 / 2;
-
             int x = (3 * 9 * (3 + (9 * 3 / (3))));
-
-            2.14 Write an application that displays the numbers 1 to 4 on the same line, with each pair of adjacent numbers separated by one space. Use the following techniques:
-
+        2.14 Write an application that displays the numbers 1 to 4 on the same line, with each pair of adjacent numbers separated by one space. Use the following techniques:
             Use one System.out.println statement.
-
             Use four System.out.print statements.
-
             Use one System.out.printf statement.
-
-            2.15 (Arithmetic) Write an application that asks the user to enter two integers, obtains them from the user and prints their sum, product, difference and quotient (division). Use the techniques shown in Fig. 2.7 .
-
-            2.16 (Comparing Integers) Write an application that asks the user to enter two integers, obtains them from the user and displays the larger number followed by the words "is larger". If the numbers are equal, print the message "These numbers are equal". Use the techniques shown in Fig. 2.15 .
-
-            2.17 (Arithmetic, Smallest and Largest) Write an application that inputs three integers from the user and displays the sum, average, product, smallest and largest of the numbers. Use the techniques shown in Fig. 2.15 . [Note: The calculation of the average in this exercise should result in an integer representation of the average. So, if the sum of the values is 7, the average should be 2, not 2.3333….]
-
-            2.18 (Displaying Shapes with Asterisks) Write an application that displays a box, an oval, an arrow and a diamond using asterisks (*), as follows:
-
-
-
-            2.19 What does the following code print?
-
+        2.15 (Arithmetic) Write an application that asks the user to enter two integers, obtains them from the user and prints their sum, product, difference and quotient (division). Use the techniques shown in Fig. 2.7 .
+        2.16 (Comparing Integers) Write an application that asks the user to enter two integers, obtains them from the user and displays the larger number followed by the words "is larger". If the numbers are equal, print the message "These numbers are equal". Use the techniques shown in Fig. 2.15 .
+        2.17 (Arithmetic, Smallest and Largest) Write an application that inputs three integers from the user and displays the sum, average, product, smallest and largest of the numbers. Use the techniques shown in Fig. 2.15 . [Note: The calculation of the average in this exercise should result in an integer representation of the average. So, if the sum of the values is 7, the average should be 2, not 2.3333….]
+        2.18 (Displaying Shapes with Asterisks) Write an application that displays a box, an oval, an arrow and a diamond using asterisks (*), as follows:
+        2.19 What does the following code print?
             System.out.printf("*%n**%n***%n****%n*****%n");
-            2.20 What does the following code print?
-
+        2.20 What does the following code print?
             System.out.println("*");
             System.out.println("***");
             System.out.println("*****");
             System.out.println("****");
             System.out.println("**");
-            2.21 What does the following code print?
-
+        2.21 What does the following code print?
             System.out.print("*");
             System.out.print("***");
             System.out.print("*****");
             System.out.print("****");
             System.out.println("**");
-            2.22 What does the following code print?
-
+        2.22 What does the following code print?
             System.out.print("*");
             System.out.println("***");
             System.out.println("*****");
             System.out.print("****");
             System.out.println("**");
-            2.23 What does the following code print?
-
+        2.23 What does the following code print?
             System.out.printf("%s%n%s%n%s%n", "*", "***", "*****");
-            2.24 (Largest and Smallest Integers) Write an application that reads five integers and determines and prints the largest and smallest integers in the group. Use only the programming techniques you learned in this chapter.
-
-            2.25 (Odd or Even) Write an application that reads an integer and determines and prints whether it’s odd or even. [Hint: Use the remainder operator. An even number is a multiple of 2. Any multiple of 2 leaves a remainder of 0 when divided by 2.]
-
-            2.26 (Multiples) Write an application that reads two integers, determines whether the first is a multiple of the second and prints the result. [Hint: Use the remainder operator.]
-
-            2.27 (Checkerboard Pattern of Asterisks) Write an application that displays a checkerboard pattern, as follows:
-
-
-
-            2.28 (Diameter, Circumference and Area of a Circle) Here’s a peek ahead. In this chapter, you learned about integers and the type int. Java can also represent floating-point numbers that contain decimal points, such as 3.14159. Write an application that inputs from the user the radius of a circle as an integer and prints the circle’s diameter, circumference and area using the floating-point value 3.14159 for π. Use the techniques shown in Fig. 2.7 . [Note: You may also use the predefined constant Math.PI for the value of π. This constant is more precise than the value 3.14159. Class Math is defined in package java.lang. Classes in that package are imported automatically, so you do not need to import class Math to use it.] Use the following formulas (r is the radius):
-
+        2.24 (Largest and Smallest Integers) Write an application that reads five integers and determines and prints the largest and smallest integers in the group. Use only the programming techniques you learned in this chapter.
+        2.25 (Odd or Even) Write an application that reads an integer and determines and prints whether it’s odd or even. [Hint: Use the remainder operator. An even number is a multiple of 2. Any multiple of 2 leaves a remainder of 0 when divided by 2.]
+        2.26 (Multiples) Write an application that reads two integers, determines whether the first is a multiple of the second and prints the result. [Hint: Use the remainder operator.]
+        2.27 (Checkerboard Pattern of Asterisks) Write an application that displays a checkerboard pattern, as follows:
+        2.28 (Diameter, Circumference and Area of a Circle) Here’s a peek ahead. In this chapter, you learned about integers and the type int. Java can also represent floating-point numbers that contain decimal points, such as 3.14159. Write an application that inputs from the user the radius of a circle as an integer and prints the circle’s diameter, circumference and area using the floating-point value 3.14159 for π. Use the techniques shown in Fig. 2.7 . [Note: You may also use the predefined constant Math.PI for the value of π. This constant is more precise than the value 3.14159. Class Math is defined in package java.lang. Classes in that package are imported automatically, so you do not need to import class Math to use it.] Use the following formulas (r is the radius):
             diameter=2rcircumference=2πrarea=πr2
             Do not store the results of each calculation in a variable. Rather, specify each calculation as the value that will be output in a System.out.printf statement. The values produced by the circumference and area calculations are floating-point numbers. Such values can be output with the format specifier %f in a System.out.printf statement. You’ll learn more about floating-point numbers in Chapter 3 .
-
-            2.29 (Integer Value of a Character) Here’s another peek ahead. In this chapter, you learned about integers and the type int. Java can also represent uppercase letters, lowercase letters and a considerable variety of special symbols. Every character has a corresponding integer representation. The set of characters a computer uses together with the corresponding integer representations for those characters is called that computer’s character set. You can indicate a character value in a program simply by enclosing that character in single quotes, as in ‘A’.
-
+        2.29 (Integer Value of a Character) Here’s another peek ahead. In this chapter, you learned about integers and the type int. Java can also represent uppercase letters, lowercase letters and a considerable variety of special symbols. Every character has a corresponding integer representation. The set of characters a computer uses together with the corresponding integer representations for those characters is called that computer’s character set. You can indicate a character value in a program simply by enclosing that character in single quotes, as in ‘A’.
             You can determine a character’s integer equivalent by preceding that character with (int), as in
-
             (int) ‘A’
             An operator of this form is called a cast operator. (You’ll learn about cast operators in Chapter 4 .) The following statement outputs a character and its integer equivalent:
-
             System.out.printf("The character %c has the value %d%n", ‘A’, ((int) ‘A’));
             When the preceding statement executes, it displays the character A and the value 65 (from the Unicode® character set) as part of the string. The format specifier %c is a placeholder for a character (in this case, the character ‘A’).
-
             Using statements similar to the one shown earlier in this exercise, write an application that displays the integer equivalents of some uppercase letters, lowercase letters, digits and special symbols. Display the integer equivalents of the following: A B C a b c 0 1 2 $ * + / and the blank character.
-
-            2.30 (Separating the Digits in an Integer) Write an application that inputs one number consisting of five digits from the user, separates the number into its individual digits and prints the digits separated from one another by three spaces each. For example, if the user types in the number 42339, the program should print
-
+        2.30 (Separating the Digits in an Integer) Write an application that inputs one number consisting of five digits from the user, separates the number into its individual digits and prints the digits separated from one another by three spaces each. For example, if the user types in the number 42339, the program should print
             4 2 3 3 9
             Assume that the user enters the correct number of digits. What happens when you enter a number with more than five digits? What happens when you enter a number with fewer than five digits? [Hint: It’s possible to do this exercise with the techniques you learned in this chapter. You’ll need to use both division and remainder operations to “pick off ” each digit.]
-
-            2.31 (Table of Squares and Cubes) Using only the programming techniques you learned in this chapter, write an application that calculates the squares and cubes of the numbers from 0 to 10 and prints the resulting values in table format, as shown below.
-
+        2.31 (Table of Squares and Cubes) Using only the programming techniques you learned in this chapter, write an application that calculates the squares and cubes of the numbers from 0 to 10 and prints the resulting values in table format, as shown below.
             number   square   cube
             0        0        0
             1        1        1
@@ -230,9 +176,7 @@ public class Main {
             8        64       512
             9        81       729
             10       100      1000
-            2.32 (Negative, Positive and Zero Values) Write a program that inputs five numbers and determines and prints the number of negative numbers input, the number of positive numbers input and the number of zeros input.
-                     * 
-         * 
+        2.32 (Negative, Positive and Zero Values) Write a program that inputs five numbers and determines and prints the number of negative numbers input, the number of positive numbers input and the number of zeros input. 
          */
     }
     
